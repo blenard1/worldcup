@@ -177,6 +177,18 @@ http://127.0.0.1:5173/
 
 The dashboard calls `POST http://127.0.0.1:8000/predict-match`. Set `VITE_API_BASE_URL` if the backend runs elsewhere.
 
+## Deploy On Streamlit Cloud
+
+This repository includes `streamlit_app.py` as a single-file deployment wrapper.
+
+Use these Streamlit Cloud settings:
+
+- Repository: `blenard1/worldcup`
+- Branch: `main`
+- Main file path: `streamlit_app.py`
+
+Streamlit Cloud will install `requirements.txt`. On first run, the app builds the sample training dataset and trains the small sample model automatically.
+
 ## Simulate Tournament
 
 ```bash
