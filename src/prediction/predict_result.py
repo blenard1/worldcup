@@ -60,4 +60,5 @@ def _feature_frame(feature_row: pd.Series | dict | pd.DataFrame) -> pd.DataFrame
         missing = ", ".join(missing_features)
         raise ValueError(f"Feature row is missing model features: {missing}")
 
-    return frame[MODEL_FEATURES]
+    numeric_features = frame[MODEL_FEATURES].apply(pd.to_numeric, errors="raise")
+    return numeric_features.astype(float)

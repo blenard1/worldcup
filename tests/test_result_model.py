@@ -3,6 +3,7 @@ import subprocess
 import sys
 import warnings
 
+import numpy as np
 import pytest
 
 from src.data.build_dataset import (
@@ -23,6 +24,15 @@ from src.models.train_result_model import (
 )
 from src.prediction.predict_result import predict_result_proba
 from src.utils.config import PROJECT_ROOT
+
+
+class StrictNumericModel:
+    classes_ = [0, 1, 2]
+
+    def predict_proba(self, X):
+        assert not X.empty
+        assert all(np.issubdtype(dtype, np.number) for dtype in X.dtypes)
+        return np.array([[0.4, 0.2, 0.4]])
 
 
 def _build_sample_training_dataset():
@@ -80,6 +90,21 @@ def test_predict_result_proba_returns_valid_probabilities(tmp_path):
     assert set(probabilities) == {"team_a_win", "draw", "team_b_win"}
     assert sum(probabilities.values()) == pytest.approx(1.0)
     assert all(0 <= value <= 1 for value in probabilities.values())
+
+
+def test_predict_result_proba_coerces_mixed_series_features_to_numeric():
+    dataset = _build_sample_training_dataset()
+    feature_row = dataset.iloc[0].copy()
+    feature_row["team_a"] = "France"
+    feature_row["team_b"] = "Paraguay"
+
+    probabilities = predict_result_proba(StrictNumericModel(), feature_row)
+
+    assert probabilities == {
+        "team_a_win": pytest.approx(0.4),
+        "draw": pytest.approx(0.2),
+        "team_b_win": pytest.approx(0.4),
+    }
 
 
 def test_predict_result_proba_raises_for_missing_features(tmp_path):
