@@ -1,0 +1,16 @@
+match_id,round,team_a,team_b,next_match_id
+R16_1,R16,Morocco,Canada,QF_1
+R16_2,R16,France,Paraguay,QF_1
+R16_3,R16,Brazil,Norway,QF_2
+R16_4,R16,Mexico,England,QF_2
+R16_5,R16,Spain,Portugal,QF_3
+R16_6,R16,USA,Belgium,QF_3
+R16_7,R16,Argentina,Egypt,QF_4
+R16_8,R16,Colombia,Switzerland,QF_4
+QF_1,Quarterfinal,,,SF_1
+QF_2,Quarterfinal,,,SF_1
+QF_3,Quarterfinal,,,SF_2
+QF_4,Quarterfinal,,,SF_2
+SF_1,Semifinal,,,FINAL
+SF_2,Semifinal,,,FINAL
+FINAL,Final,,,

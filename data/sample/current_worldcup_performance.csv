@@ -1,0 +1,15 @@
+team,matches_played,goals_scored,goals_conceded,shots_per_match,shots_on_target_per_match,xg_per_match,xga_per_match,possession_avg,clean_sheets,cards,rest_days
+Argentina,5,9,4,14.2,6.1,1.9,0.8,58.4,2,8,4
+Brazil,5,8,3,16.5,6.8,2.1,0.7,56.7,3,7,5
+Croatia,5,6,4,11.4,4.2,1.3,1.0,54.8,2,9,4
+England,5,10,4,13.8,5.5,1.8,0.9,57.1,3,6,5
+France,5,11,5,15.1,6.4,2.0,1.1,52.6,1,5,4
+Germany,3,6,5,17.0,6.7,1.9,1.3,61.0,0,5,6
+Japan,4,5,4,10.8,4.8,1.2,1.4,39.5,1,6,5
+Morocco,5,5,1,9.6,3.4,1.0,0.7,36.4,4,8,4
+Netherlands,5,8,4,10.5,4.5,1.5,0.9,47.2,2,7,5
+Poland,4,3,5,8.8,3.0,0.8,1.5,41.3,1,7,5
+Saudi Arabia,3,3,5,8.2,3.2,0.7,1.7,44.8,0,9,7
+Scotland,3,2,7,9.3,2.8,0.8,1.8,43.5,0,6,5
+Spain,5,9,3,15.7,6.0,1.8,0.8,63.5,2,6,4
+United States,4,3,4,11.7,3.8,1.1,1.0,50.6,2,5,5

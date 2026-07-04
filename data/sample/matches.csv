@@ -1,0 +1,13 @@
+match_id,date,team_a,team_b,team_a_score,team_b_score,tournament,stage,neutral,city,country,is_knockout,team_a_advanced
+M001,2022-11-22,Argentina,Saudi Arabia,1,2,Sample World Cup 2022,Group C,true,Lusail,Qatar,false,
+M002,2022-11-23,Germany,Japan,1,2,Sample World Cup 2022,Group E,true,Al Rayyan,Qatar,false,
+M003,2022-11-25,England,United States,0,0,Sample World Cup 2022,Group B,true,Al Khor,Qatar,false,
+M004,2022-11-27,Spain,Germany,1,1,Sample World Cup 2022,Group E,true,Al Khor,Qatar,false,
+M005,2022-12-03,Netherlands,United States,3,1,Sample World Cup 2022,Round of 16,true,Al Rayyan,Qatar,true,true
+M006,2022-12-04,France,Poland,3,1,Sample World Cup 2022,Round of 16,true,Doha,Qatar,true,true
+M007,2022-12-09,Croatia,Brazil,1,1,Sample World Cup 2022,Quarter-final,true,Al Rayyan,Qatar,true,true
+M008,2022-12-10,England,France,1,2,Sample World Cup 2022,Quarter-final,true,Al Khor,Qatar,true,false
+M009,2022-12-13,Argentina,Croatia,3,0,Sample World Cup 2022,Semi-final,true,Lusail,Qatar,true,true
+M010,2022-12-14,France,Morocco,2,0,Sample World Cup 2022,Semi-final,true,Al Khor,Qatar,true,true
+M011,2024-06-14,Germany,Scotland,4,1,Sample International 2024,Group A,false,Munich,Germany,false,
+M012,2024-07-14,Spain,England,2,1,Sample International 2024,Final,true,Berlin,Germany,true,true
